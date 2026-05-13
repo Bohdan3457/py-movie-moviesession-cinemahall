@@ -54,6 +54,5 @@ def delete_movie_session_by_id(session_id: int) -> int:
     return session_id
 
 
-# ВАЖЛИВО: тести чекають ЦЮ назву
 def get_movies_sessions(session_date: date | None = None) -> QuerySet:
     return get_movie_session(session_date)
